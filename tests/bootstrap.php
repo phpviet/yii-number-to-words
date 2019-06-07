@@ -5,7 +5,6 @@
  * @copyright (c) PHP Viet
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
-
 error_reporting(E_ALL);
 
 define('YII_ENABLE_ERROR_HANDLER', false);

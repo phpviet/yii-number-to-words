@@ -49,7 +49,7 @@ class N2W extends Component
     protected $dictionaries = [];
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function init(): void
     {
@@ -85,7 +85,7 @@ class N2W extends Component
      */
     protected function getTransformer(): Transformer
     {
-        if (!isset($this->dictionaries[$this->dictionary])) {
+        if (! isset($this->dictionaries[$this->dictionary])) {
             throw new InvalidConfigException(sprintf('Dictionary (%s) is not defined!', $this->dictionary));
         }
 
@@ -113,8 +113,7 @@ class N2W extends Component
     {
         return [
             self::SOUTH_DICTIONARY => SouthDictionary::class,
-            self::STANDARD_DICTIONARY => Dictionary::class
+            self::STANDARD_DICTIONARY => Dictionary::class,
         ];
     }
-
 }

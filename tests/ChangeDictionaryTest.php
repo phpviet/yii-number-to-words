@@ -129,5 +129,4 @@ class ChangeDictionaryTest extends TestCase
             ['sáu trăm năm mươi ngàn sáu trăm bảy mươi ba', 650673],
         ];
     }
-
 }

@@ -20,7 +20,6 @@ use PHPViet\NumberToWords\DictionaryInterface;
  */
 class Bootstrap implements BootstrapInterface
 {
-
     /**
      * Đối tượng application đang cần boot.
      *
@@ -29,7 +28,7 @@ class Bootstrap implements BootstrapInterface
     protected $app;
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function bootstrap($app): void
     {
@@ -43,11 +42,10 @@ class Bootstrap implements BootstrapInterface
      */
     protected function registerComponent(): void
     {
-        if (!$this->app->get('n2w', false)) {
+        if (! $this->app->get('n2w', false)) {
             $this->app->set('n2w', ['class' => N2W::class]);
         }
     }
-
 
     /**
      * Đăng ký các singleton classes vào container tối ưu việc khởi tạo đối tượng mới khi thay đổi từ điển.
@@ -58,9 +56,8 @@ class Bootstrap implements BootstrapInterface
             'singletons' => [
                 Dictionary::class => Dictionary::class,
                 DictionaryInterface::class => Dictionary::class,
-                SouthDictionary::class => SouthDictionary::class
-            ]
+                SouthDictionary::class => SouthDictionary::class,
+            ],
         ]);
     }
-
 }

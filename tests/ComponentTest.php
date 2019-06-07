@@ -16,7 +16,6 @@ use Yii;
  */
 class ComponentTest extends TestCase
 {
-
     /**
      * @dataProvider dataProvider
      */
@@ -25,7 +24,6 @@ class ComponentTest extends TestCase
         $this->assertEquals($expect, Yii::$app->n2w->toWords($number));
     }
 
-
     /**
      * @dataProvider currencyDataProvider
      */
@@ -33,5 +31,4 @@ class ComponentTest extends TestCase
     {
         $this->assertEquals($expect, Yii::$app->n2w->toCurrency($number));
     }
-
 }

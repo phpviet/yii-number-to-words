@@ -16,7 +16,6 @@ use phpviet\yii\numberToWords\N2WHelper;
  */
 class HelperTest extends TestCase
 {
-
     /**
      * @dataProvider dataProvider
      */
@@ -25,7 +24,6 @@ class HelperTest extends TestCase
         $this->assertEquals($expect, N2WHelper::toWords($number));
     }
 
-
     /**
      * @dataProvider currencyDataProvider
      */
@@ -33,5 +31,4 @@ class HelperTest extends TestCase
     {
         $this->assertEquals($expect, N2WHelper::toCurrency($number));
     }
-
 }

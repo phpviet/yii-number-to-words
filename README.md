@@ -79,7 +79,7 @@ Yii::$app->n2w->toCurrency(95500200);
 ```
 
 Ngoài ra ta còn có thể sử dụng đơn vị tiền tệ khác thông qua tham trị thứ 2 của phương thức
-`toCurrency` tại helper và component với mảng phần từ đầu tiên là đơn vị cho số nguyên và kế tiếp là đơn vị của phân số:
+`toCurrency` tại helper và component, với mảng phần từ đầu tiên là đơn vị cho số nguyên và kế tiếp là đơn vị của phân số:
 
 ```php
 use phpviet\yii\numberToWords\N2WHelper;
@@ -125,7 +125,7 @@ N2WHelper::toWords(1000);
  // hai mươi tư => hai mươi bốn
 N2WHelper::toWords(24);
 
-// một trăm hai mươi tư nghìn không trăm linh một => một trăm hai mươi bốn ngàn không trăm lẻ một
+// một trăm hai mươi tư nghìn không trăm linh một đồng => một trăm hai mươi bốn ngàn không trăm lẻ một đồng
 N2WHelper::toCurrency(124001);
 ```
 

@@ -11,7 +11,7 @@ Yii number to words hổ trợ chuyển đổi số sang chữ số Tiếng Vi�
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/phpviet/yii-number-to-words.svg?style=flat-square)](https://packagist.org/packages/phpviet/yii-number-to-words)
 [![Build Status](https://img.shields.io/travis/phpviet/yii-number-to-words/master.svg?style=flat-square)](https://travis-ci.org/phpviet/yii-number-to-words)
 [![Quality Score](https://img.shields.io/scrutinizer/g/phpviet/yii-number-to-words.svg?style=flat-square)](https://scrutinizer-ci.com/g/phpviet/yii-number-to-words)
-[![StyleCI](https://styleci.io/repos/190297766/shield?branch=master)](https://styleci.io/repos/190297766)
+[![StyleCI](https://styleci.io/repos/190297787/shield?branch=master)](https://styleci.io/repos/190297787)
 [![Total Downloads](https://img.shields.io/packagist/dt/phpviet/yii-number-to-words.svg?style=flat-square)](https://packagist.org/packages/phpviet/yii-number-to-words)
 
 ## Cài đặt

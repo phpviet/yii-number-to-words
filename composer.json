@@ -1,0 +1,54 @@
+{
+    "name": "phpviet/yii-number-to-words",
+    "type": "yii2-extension",
+    "description": "Yii number to words hổ trợ chuyển đổi số sang chữ số Tiếng Việt",
+    "keywords": [
+        "phpviet",
+        "yii-number-to-words"
+    ],
+    "homepage": "https://github.com/phpviet/yii-number-to-words",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vuong Xuong Minh",
+            "email": "vuongxuongminh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "phpviet/number-to-words": "^1.0",
+        "yiisoft/yii2": "~2.0.13"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.5",
+        "scrutinizer/ocular": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpviet\\yii\\numberToWords\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "phpviet\\yii\\numberToWords\\tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "bootstrap": "phpviet\\yii\\numberToWords\\Bootstrap"
+	}
+}
